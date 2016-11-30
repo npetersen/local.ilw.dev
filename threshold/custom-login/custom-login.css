@@ -1,0 +1,74 @@
+/*
+ * Our Custom Login Page Stylesheet
+ */
+
+/* The background This can be image or color, note the !important at the end. */
+body {
+	/*background: url(http://teamintermountainlivewell.org/wp-content/uploads/2013/04/ilw-race-1.jpg) no-repeat top center fixed !important; 
+	background-size: cover;*/
+	background-color: #555 !important;
+}
+
+body:after {
+	content: "";
+	background: rgba(221, 221, 221, 0.8) url(http://teamintermountainlivewell.org/wp-content/uploads/2013/02/pattern.png) repeat;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+#login {
+	padding: 0 !important;
+}
+
+/* Title image (The "WordPress Logo") Must use image as a Background! Remember to update the height and width your image's dimensions */
+#login h1 a {
+	background: url(http://teamintermountainlivewell.org/wp-content/uploads/2014/12/ts-client-logo-320x260.png) 0 0 no-repeat;
+	background-size: auto !important;
+	width: 320px;
+	height: 260px;
+	margin: 0 auto 0 !important;
+}
+
+/* The Form ( The login box ) Background color, border, shadow, etc. */
+#login form {
+	background-color: rgba(3, 3, 3, 0.6);
+	/* padding: 26px !important; */
+	margin-top: 0 !important;
+	width: 272px !important;
+}
+
+/* The Login Fields Username and Password */
+#login .input {
+	background-color: #ccc;
+}
+
+/* The Labels The text above the fields */
+#login label {
+	color: #fff;
+	/*font-size: 10px;
+	font-size: 1.0rem;*/
+}
+
+/* The Submit Button */
+#login input[type=submit] {
+	background-color: #1e73be;
+	border-radius: 0px;
+	border: none;
+	border-bottom: 4px solid #4a8fcb;
+	color: #81d742;
+}
+
+#login input[type=submit]:active {}	
+		
+/* The Back to blog and Forgot Password link */
+#nav a, #backtoblog a {
+	color: #000 !important;
+}
+
+#backtoblog {
+	display: none !important;
+}
